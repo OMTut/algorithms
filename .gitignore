@@ -1,0 +1,14 @@
+# object files
+.o
+.obj
+
+# Exec
+*.exe
+.out
+.app
+
+/build
+/bin
+/-p
+
+.vscode
