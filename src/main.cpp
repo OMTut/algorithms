@@ -1,8 +1,9 @@
 #include "Menu.h"
+#include "tests/Two_Pointers/test_TPRemove_Dupes.h"
 
 void twoPointersMenu() {
   Menu twoPointersMenu("Two Pointers Menu");
-  twoPointersMenu.addItem("1. Remove Dupes", []() { cout << "Remove Dupes here" << endl;});
+  twoPointersMenu.addItem("1. Remove Dupes", testTPRemoveDupes);
   twoPointersMenu.addItem("2. Another Problem", []() {cout << "Another Problem Logic here" << endl;});
   twoPointersMenu.navigate();
 }

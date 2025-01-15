@@ -9,6 +9,8 @@ become 0, 1, 2. Return 3 because the new length is 3.
  *****************************************************************************/
 #include "TPRemove_Dupes.h"
 
+using namespace std;
+
 //Constructor
 TPRemove_Dupes::TPRemove_Dupes(const vector<int>& data) : data(data) {}
 
@@ -16,7 +18,7 @@ TPRemove_Dupes::TPRemove_Dupes(const vector<int>& data) : data(data) {}
 int TPRemove_Dupes::removeDupes() {
     if (data.empty()) return 0;
     int slow = 0;
-    for (int fast = 1; fast < data.size(); fast++) {
+    for (int fast = 0; fast < int(data.size()); fast++) {
         if (data[fast] != data[slow]) {
             slow++;
             data[slow] = data[fast];
