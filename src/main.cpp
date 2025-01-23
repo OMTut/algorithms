@@ -1,10 +1,11 @@
 #include "Menu.h"
 #include "tests/Two_Pointers/test_TPRemove_Dupes.h"
+#include "tests/Two_Pointers/testTPMove_Zeros.h"
 
 void twoPointersMenu() {
   Menu twoPointersMenu("Two Pointers Menu");
   twoPointersMenu.addItem("1. Remove Dupes", testTPRemoveDupes);
-  twoPointersMenu.addItem("2. Another Problem", []() {cout << "Another Problem Logic here" << endl;});
+  twoPointersMenu.addItem("2. Move Zeros", testTPMove_Zeros);
   twoPointersMenu.navigate();
 }
 
