@@ -4,8 +4,8 @@
 
 void twoPointersMenu() {
   Menu twoPointersMenu("Two Pointers Menu");
-  twoPointersMenu.addItem("1. Remove Dupes", testTPRemoveDupes);
-  twoPointersMenu.addItem("2. Move Zeros", testTPMove_Zeros);
+  twoPointersMenu.addItem("Remove Dupes", testTPRemoveDupes);
+  twoPointersMenu.addItem("Move Zeros", testTPMove_Zeros);
   twoPointersMenu.navigate();
 }
 
